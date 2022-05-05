@@ -19,7 +19,9 @@ Create a folder named ldap and copy the folder tree from this repo
 ./ldap/docker-compose.yml  - Compose file for services  
 ./ldap/seed.sh             - shell script for seeding the Directory  
 
-The docker-compose.yml contains some default values that should be set to meet your needs and match the seed data. The principal values are LDAP_DOMAIN which has a default value of "ldap.mydirectory.com" and LDAP_ADMIN_PASSWORD which gas the default value of "admin"
+The docker-compose.yml contains some default values that should be set to meet your needs and match the seed data. The principal values are LDAP_DOMAIN which has a default value of "ldap.mydirectory.com" and LDAP_ADMIN_PASSWORD which has the default value of "admin"
+
+If you change the domain name also update domainname and hostname in docker-compose.yml
 
 To start the services run
 

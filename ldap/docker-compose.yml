@@ -33,8 +33,8 @@ services:
     ports:
       - "389:389"
       - "636:636"
-    domainname: "ldasp-01.ldap.morpheusdata.com" # important: same as hostname
-    hostname: "ldap-01.ldap.morpheusdata.com"
+    domainname: "ldasp-01.ldap.mydirectory.com" # important: same as hostname
+    hostname: "ldap-01.ldap.mydirectory.com"
   phpldapadmin:
     image: osixia/phpldapadmin:latest
     container_name: phpldapadmin
