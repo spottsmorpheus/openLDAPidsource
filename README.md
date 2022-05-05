@@ -33,7 +33,7 @@ to seed the Directory with test data run
 
 from the ./ldap folder
 
-To administer the Directory use the plpLDAPadmin web page. The default location is http://<dockerhost>:8080
+To administer the Directory use the plpLDAPadmin web page. The default location is http://yourdockerhostname:8080
   
 Default users/groups and passwords can be found in the ./seedldif folder.
 
@@ -42,7 +42,7 @@ The default Admin login and password can be set in the docker-compose.yml file -
 To Add to Morpheus as an LDAP Identity Source
 ---------------------------------------------
 
-In the Edit Identity Source Dialog enter the LDAP Connection URL as ldap://<dockerhost>:389
+In the Edit Identity Source Dialog enter the LDAP Connection URL as ldap://yourdockerhostname:389
 
 The Binding Username is morphsvc pwd: Password123 unless changed in the seed data.
 
