@@ -1,6 +1,6 @@
 # openLDAPidsource
 
-A Docker container OpenLDAP directory seeded with some basic user data for use as an Identity source with Moprheus
+A Docker container OpenLDAP directory seeded with some basic user data for use as an Identity source with Morpheus
 
 Based on the Docker Images found here
 
@@ -30,6 +30,6 @@ from the ./ldap folder
 
 To administer the Directory use the plpLDAPadmin web page. The default location is http://<dockerhost>:8080
   
-Default users/groups and passwords can be found in the ./seedldif folder
+Default users/groups and passwords can be found in the ./seedldif folder.
 
 The default Admin login and password can be set in the docker-compose.yml file - the default password is admin
