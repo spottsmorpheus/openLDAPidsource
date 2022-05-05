@@ -39,8 +39,8 @@ Default users/groups and passwords can be found in the ./seedldif folder.
 
 The default Admin login and password can be set in the docker-compose.yml file - the default password is admin
 
-To Add to Morpheues as an LDAP Identity Source
-----------------------------------------------
+To Add to Morpheus as an LDAP Identity Source
+---------------------------------------------
 
 In the Edit Identity Source Dialog enter the LDAP Connection URL as ldap://<dockerhost>:389
 
