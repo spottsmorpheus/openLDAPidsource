@@ -5,8 +5,8 @@ services:
     container_name: openldap
     environment:
       LDAP_LOG_LEVEL: "256"
-      LDAP_ORGANISATION: "Morpheus Testing"
-      LDAP_DOMAIN: "ldap.morpheusdata.com"
+      LDAP_ORGANISATION: "Morpheus LDAP Id Source Testing"
+      LDAP_DOMAIN: "ldap.mydirectory.com"
       LDAP_ADMIN_PASSWORD: "admin"
       LDAP_CONFIG_PASSWORD: "config"
       LDAP_READONLY_USER: "false"

@@ -1,7 +1,7 @@
 #
 # userpassword: {MD5}QvdJref54ZW/R183pEyvyw==   is the value  Password123
 #
-# LDIF Export for dc=ldap,dc=morpheusdata,dc=com
+# LDIF Export for dc=ldap,dc=mydirectory,dc=com
 # Server: openldap (openldap)
 # Search Scope: sub
 # Search Filter: (objectClass=*)
@@ -12,18 +12,18 @@
 
 version: 1
 
-# Root: dc=ldap,dc=morpheusdata,dc=com
+# Root: dc=ldap,dc=mydirectory,dc=com
 
 # Create OU's
 
-# OU: ou=groups,dc=ldap,dc=morpheusdata,dc=com
-dn: ou=groups,dc=ldap,dc=morpheusdata,dc=com
+# OU: ou=groups,dc=ldap,dc=mydirectory,dc=com
+dn: ou=groups,dc=ldap,dc=mydirectory,dc=com
 objectclass: organizationalUnit
 objectclass: top
 ou: groups
 
-# OU ou=users,dc=ldap,dc=morpheusdata,dc=com
-dn: ou=users,dc=ldap,dc=morpheusdata,dc=com
+# OU ou=users,dc=ldap,dc=mydirectory,dc=com
+dn: ou=users,dc=ldap,dc=mydirectory,dc=com
 objectclass: organizationalUnit
 objectclass: top
 ou: users
@@ -32,10 +32,10 @@ ou: users
 
 # Users inetOrgPerson
 
-# Service Account: uid=morphsvc,ou=users,dc=ldap,dc=morpheusdata,dc=com
+# Service Account: uid=morphsvc,ou=users,dc=ldap,dc=mydirectory,dc=com
 # Use this account as the binding username
 
-dn: uid=morphsvc,ou=users,dc=ldap,dc=morpheusdata,dc=com
+dn: uid=morphsvc,ou=users,dc=ldap,dc=mydirectory,dc=com
 cn: morphsvc
 givenname: morph
 mail: morphsvc@noone.com
@@ -45,8 +45,8 @@ sn: svc
 uid: morphsvc
 userpassword: {MD5}QvdJref54ZW/R183pEyvyw==
 
-# Admin User: uid=morphadmin,ou=users,dc=ldap,dc=morpheusdata,dc=com
-dn: uid=morphadmin,ou=users,dc=ldap,dc=morpheusdata,dc=com
+# Admin User: uid=morphadmin,ou=users,dc=ldap,dc=mydirectory,dc=com
+dn: uid=morphadmin,ou=users,dc=ldap,dc=mydirectory,dc=com
 cn: morphadmin
 givenname: morph
 mail: morphadmin@noone.com
@@ -56,8 +56,8 @@ sn: admin
 uid: morphadmin
 userpassword: {MD5}QvdJref54ZW/R183pEyvyw==
 
-# User: uid=morphuser1,ou=users,dc=ldap,dc=morpheusdata,dc=com
-dn: uid=morphuser1,ou=users,dc=ldap,dc=morpheusdata,dc=com
+# User: uid=morphuser1,ou=users,dc=ldap,dc=mydirectory,dc=com
+dn: uid=morphuser1,ou=users,dc=ldap,dc=mydirectory,dc=com
 cn: morphuser1
 givenname: morphuser
 mail: morphuser1@noone.com
@@ -67,8 +67,8 @@ sn: 1
 uid: morphuser1
 userpassword: {MD5}QvdJref54ZW/R183pEyvyw==
 
-# User: uid=morphuser2,ou=users,dc=ldap,dc=morpheusdata,dc=com
-dn: uid=morphuser2,ou=users,dc=ldap,dc=morpheusdata,dc=com
+# User: uid=morphuser2,ou=users,dc=ldap,dc=mydirectory,dc=com
+dn: uid=morphuser2,ou=users,dc=ldap,dc=mydirectory,dc=com
 cn: morphuser1
 givenname: morphuser
 mail: morphuser2@noone.com
@@ -79,7 +79,7 @@ uid: morphuser2
 userpassword: {MD5}QvdJref54ZW/R183pEyvyw==
 
 # Users PosixAccount for testing
-dn: cn=posuser1,ou=users,dc=ldap,dc=morpheusdata,dc=com
+dn: cn=posuser1,ou=users,dc=ldap,dc=mydirectory,dc=com
 cn: posuser1
 gidnumber: 500
 givenname: posuser
@@ -97,43 +97,43 @@ userpassword: {MD5}QvdJref54ZW/R183pEyvyw==
 # UniqueGroupOfNames Groups for Role Assignment in Morpheus
 
 # Example SysAdmin group
-# Group cn=v1RoleSysadmin,ou=groups,dc=ldap,dc=morpheusdata,dc=com
-dn: cn=v1RoleSysadmin,ou=groups,dc=ldap,dc=morpheusdata,dc=com
+# Group cn=v1RoleSysadmin,ou=groups,dc=ldap,dc=mydirectory,dc=com
+dn: cn=v1RoleSysadmin,ou=groups,dc=ldap,dc=mydirectory,dc=com
 cn: v1RolSysadmin
 description: Assigned to Morpheus Sysadmin Role
 objectclass: groupOfUniqueNames
 objectclass: top
-uniquemember: uid=morphadmin,ou=users,dc=ldap,dc=morpheusdata,dc=com
+uniquemember: uid=morphadmin,ou=users,dc=ldap,dc=mydirectory,dc=com
 
 # Example Role Groups 
 
-# Group: cn=v1RoleA,ou=groups,dc=ldap,dc=morpheusdata,dc=com
-dn: cn=v1RoleA,ou=groups,dc=ldap,dc=morpheusdata,dc=com
+# Group: cn=v1RoleA,ou=groups,dc=ldap,dc=mydirectory,dc=com
+dn: cn=v1RoleA,ou=groups,dc=ldap,dc=mydirectory,dc=com
 cn: v1RoleA
 description: Role Group for Role A
 objectclass: groupOfUniqueNames
 objectclass: top
-uniquemember: uid=morphuser1,ou=users,dc=ldap,dc=morpheusdata,dc=com
+uniquemember: uid=morphuser1,ou=users,dc=ldap,dc=mydirectory,dc=com
 
-# Group: cn=v1RoleB,ou=groups,dc=ldap,dc=morpheusdata,dc=com
-dn: cn=v1RoleB,ou=groups,dc=ldap,dc=morpheusdata,dc=com
+# Group: cn=v1RoleB,ou=groups,dc=ldap,dc=mydirectory,dc=com
+dn: cn=v1RoleB,ou=groups,dc=ldap,dc=mydirectory,dc=com
 cn: v1RoleB
 description: Role Group for Role B
 objectclass: groupOfUniqueNames
 objectclass: top
-uniquemember: uid=morphuser2,ou=users,dc=ldap,dc=morpheusdata,dc=com
+uniquemember: uid=morphuser2,ou=users,dc=ldap,dc=mydirectory,dc=com
 
 # Posix Groups for testing
 
-# Posix Group: cn=posSysAdmin,ou=groups,dc=ldap,dc=morpheusdata,dc=com
-dn: cn=posSysAdmin,ou=groups,dc=ldap,dc=morpheusdata,dc=com
+# Posix Group: cn=posSysAdmin,ou=groups,dc=ldap,dc=mydirectory,dc=com
+dn: cn=posSysAdmin,ou=groups,dc=ldap,dc=mydirectory,dc=com
 cn: posSysAdmin
 gidnumber: 500
 objectclass: posixGroup
 objectclass: top
 
-# Posix Group: cn=posRoleA,ou=groups,dc=ldap,dc=morpheusdata,dc=com
-dn: cn=posRoleA,ou=groups,dc=ldap,dc=morpheusdata,dc=com
+# Posix Group: cn=posRoleA,ou=groups,dc=ldap,dc=mydirectory,dc=com
+dn: cn=posRoleA,ou=groups,dc=ldap,dc=mydirectory,dc=com
 cn: posRoleA
 gidnumber: 501
 objectclass: posixGroup
