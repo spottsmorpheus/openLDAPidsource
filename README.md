@@ -38,3 +38,12 @@ To administer the Directory use the plpLDAPadmin web page. The default location 
 Default users/groups and passwords can be found in the ./seedldif folder.
 
 The default Admin login and password can be set in the docker-compose.yml file - the default password is admin
+
+To Add to Morpheues as an LDAP Identity Source
+----------------------------------------------
+
+In the Edit Identity Source Dialog enter the LDAP Connection URL as ldap://<dockerhost>:389
+
+The Binding Username is morphsvc pwd: Password123 unless changed in the seed data.
+
+You can set up role mappings using the seeded group dn's if required
