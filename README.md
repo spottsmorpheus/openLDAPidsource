@@ -10,7 +10,7 @@ https://github.com/osixia/docker-phpLDAPadmin
 
 To use this identity Source you require a Linux host with docker and docker-compose installed
 
-Create a folder named ldap and copy the folder tree from this repo
+Folder Layout
 
 ./ldap/config              - Docker Volume for persisting the LDAP config  
 ./ldap/db                  - Docker Volume for persising the LDAP db  
