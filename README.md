@@ -8,7 +8,7 @@ Based on the Docker Images found here
 https://github.com/osixia/docker-openldap  
 https://github.com/osixia/docker-phpLDAPadmin  
 
-To use this identity Source you requere a Linux host with docker and docker-compose installed
+To use this identity Source you require a Linux host with docker and docker-compose installed
 
 Create a folder named ldap and copy the folder tree from this repo
 
