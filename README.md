@@ -35,7 +35,7 @@ from the ./ldap folder. Data will then persist.
 
 To administer the Directory use the built in plpLDAPadmin web page. The default location is http://<yourdockerhostname or IP>:8080
 
-The default admin user login is (cn=admin,dc=ldap,dc=mydirectory,dc=com , password is admin
+The default admin user login is cn=admin,dc=ldap,dc=mydirectory,dc=com , password is admin
   
 The default seeded users/groups and passwords can be found in the ./seedldif folder.
 
